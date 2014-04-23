@@ -7,12 +7,35 @@
 //
 
 #include <iostream>
+#include "Janken.h"
 
 int main(int argc, const char * argv[])
 {
-
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    std::cout << "Janken\n";
+    
+    int ret = 0;
+    
+    ret = JankenApp::create();
+    if(ret < 0)
+    {
+        std::cout << "JankenApp::create() error. ret = " << ret << "\n";
+        return ret;
+    }
+    
+    ret = JankenApp::execute();
+    if(ret < 0)
+    {
+        std::cout << "JankenApp::execute() error. ret = " << ret << "\n";
+        return ret;
+    }
+    
+    ret = JankenApp::destroy();
+    if(ret < 0)
+    {
+        std::cout << "JankenApp::destroy() error. ret = " << ret << "\n";
+        return ret;
+    }
+    
     return 0;
 }
 

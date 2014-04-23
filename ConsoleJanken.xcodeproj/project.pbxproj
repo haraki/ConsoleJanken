@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		72B038D91905542200322E8D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72B038D81905542200322E8D /* main.cpp */; };
 		72B038DB1905542200322E8D /* ConsoleJanken.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 72B038DA1905542200322E8D /* ConsoleJanken.1 */; };
+		72B038E21905564400322E8D /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B038E11905564400322E8D /* libLeap.dylib */; };
+		72B038E519055B5B00322E8D /* Janken.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72B038E319055B5B00322E8D /* Janken.cpp */; };
+		72B038FD1906B39600322E8D /* StateInitialize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72B038FB1906B39600322E8D /* StateInitialize.cpp */; };
+		72B039001906B43500322E8D /* StateJan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72B038FE1906B43500322E8D /* StateJan.cpp */; };
+		72B039031906B47900322E8D /* StateKen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72B039011906B47800322E8D /* StateKen.cpp */; };
+		72B039061906B4A800322E8D /* StatePon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72B039041906B4A800322E8D /* StatePon.cpp */; };
+		72B039091906B4FC00322E8D /* StateResult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72B039071906B4FC00322E8D /* StateResult.cpp */; };
+		72B0390E1906BA4500322E8D /* StateConnect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72B0390C1906BA4500322E8D /* StateConnect.cpp */; };
+		72B039111906BA5300322E8D /* StateDisconnect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72B0390F1906BA5300322E8D /* StateDisconnect.cpp */; };
+		72B039141906BC7800322E8D /* StateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72B039121906BC7800322E8D /* StateMachine.cpp */; };
+		72DE2F3D1907330F0027097B /* StateContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DE2F3B1907330F0027097B /* StateContext.cpp */; };
+		72DE2F401907CB290027097B /* StatePrepare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DE2F3E1907CB290027097B /* StatePrepare.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +40,29 @@
 		72B038D51905542200322E8D /* ConsoleJanken */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ConsoleJanken; sourceTree = BUILT_PRODUCTS_DIR; };
 		72B038D81905542200322E8D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		72B038DA1905542200322E8D /* ConsoleJanken.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ConsoleJanken.1; sourceTree = "<group>"; };
+		72B038E11905564400322E8D /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeap.dylib; path = ../../LeapSDK/lib/libLeap.dylib; sourceTree = "<group>"; };
+		72B038E319055B5B00322E8D /* Janken.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Janken.cpp; sourceTree = "<group>"; };
+		72B038E419055B5B00322E8D /* Janken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Janken.h; sourceTree = "<group>"; };
+		72B038FB1906B39600322E8D /* StateInitialize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StateInitialize.cpp; sourceTree = "<group>"; };
+		72B038FC1906B39600322E8D /* StateInitialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateInitialize.h; sourceTree = "<group>"; };
+		72B038FE1906B43500322E8D /* StateJan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StateJan.cpp; sourceTree = "<group>"; };
+		72B038FF1906B43500322E8D /* StateJan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateJan.h; sourceTree = "<group>"; };
+		72B039011906B47800322E8D /* StateKen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StateKen.cpp; sourceTree = "<group>"; };
+		72B039021906B47800322E8D /* StateKen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateKen.h; sourceTree = "<group>"; };
+		72B039041906B4A800322E8D /* StatePon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StatePon.cpp; sourceTree = "<group>"; };
+		72B039051906B4A800322E8D /* StatePon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatePon.h; sourceTree = "<group>"; };
+		72B039071906B4FC00322E8D /* StateResult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StateResult.cpp; sourceTree = "<group>"; };
+		72B039081906B4FC00322E8D /* StateResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateResult.h; sourceTree = "<group>"; };
+		72B0390C1906BA4500322E8D /* StateConnect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StateConnect.cpp; sourceTree = "<group>"; };
+		72B0390D1906BA4500322E8D /* StateConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateConnect.h; sourceTree = "<group>"; };
+		72B0390F1906BA5300322E8D /* StateDisconnect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StateDisconnect.cpp; sourceTree = "<group>"; };
+		72B039101906BA5300322E8D /* StateDisconnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateDisconnect.h; sourceTree = "<group>"; };
+		72B039121906BC7800322E8D /* StateMachine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StateMachine.cpp; sourceTree = "<group>"; };
+		72B039131906BC7800322E8D /* StateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateMachine.h; sourceTree = "<group>"; };
+		72DE2F3B1907330F0027097B /* StateContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StateContext.cpp; sourceTree = "<group>"; };
+		72DE2F3C1907330F0027097B /* StateContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateContext.h; sourceTree = "<group>"; };
+		72DE2F3E1907CB290027097B /* StatePrepare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StatePrepare.cpp; sourceTree = "<group>"; };
+		72DE2F3F1907CB290027097B /* StatePrepare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatePrepare.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72B038E21905564400322E8D /* libLeap.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +80,7 @@
 		72B038CC1905542200322E8D = {
 			isa = PBXGroup;
 			children = (
+				72B038E11905564400322E8D /* libLeap.dylib */,
 				72B038D71905542200322E8D /* ConsoleJanken */,
 				72B038D61905542200322E8D /* Products */,
 			);
@@ -60,10 +97,40 @@
 		72B038D71905542200322E8D /* ConsoleJanken */ = {
 			isa = PBXGroup;
 			children = (
+				72B038F91906B2E200322E8D /* StateMachine */,
 				72B038D81905542200322E8D /* main.cpp */,
 				72B038DA1905542200322E8D /* ConsoleJanken.1 */,
+				72B038E319055B5B00322E8D /* Janken.cpp */,
+				72B038E419055B5B00322E8D /* Janken.h */,
 			);
 			path = ConsoleJanken;
+			sourceTree = "<group>";
+		};
+		72B038F91906B2E200322E8D /* StateMachine */ = {
+			isa = PBXGroup;
+			children = (
+				72B039121906BC7800322E8D /* StateMachine.cpp */,
+				72B039131906BC7800322E8D /* StateMachine.h */,
+				72B038FB1906B39600322E8D /* StateInitialize.cpp */,
+				72B038FC1906B39600322E8D /* StateInitialize.h */,
+				72B0390C1906BA4500322E8D /* StateConnect.cpp */,
+				72B0390D1906BA4500322E8D /* StateConnect.h */,
+				72B0390F1906BA5300322E8D /* StateDisconnect.cpp */,
+				72B039101906BA5300322E8D /* StateDisconnect.h */,
+				72DE2F3E1907CB290027097B /* StatePrepare.cpp */,
+				72DE2F3F1907CB290027097B /* StatePrepare.h */,
+				72B038FE1906B43500322E8D /* StateJan.cpp */,
+				72B038FF1906B43500322E8D /* StateJan.h */,
+				72B039011906B47800322E8D /* StateKen.cpp */,
+				72B039021906B47800322E8D /* StateKen.h */,
+				72B039041906B4A800322E8D /* StatePon.cpp */,
+				72B039051906B4A800322E8D /* StatePon.h */,
+				72B039071906B4FC00322E8D /* StateResult.cpp */,
+				72B039081906B4FC00322E8D /* StateResult.h */,
+				72DE2F3B1907330F0027097B /* StateContext.cpp */,
+				72DE2F3C1907330F0027097B /* StateContext.h */,
+			);
+			name = StateMachine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,7 +184,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72B039091906B4FC00322E8D /* StateResult.cpp in Sources */,
+				72B038FD1906B39600322E8D /* StateInitialize.cpp in Sources */,
+				72B039141906BC7800322E8D /* StateMachine.cpp in Sources */,
+				72B039111906BA5300322E8D /* StateDisconnect.cpp in Sources */,
+				72B039061906B4A800322E8D /* StatePon.cpp in Sources */,
+				72DE2F401907CB290027097B /* StatePrepare.cpp in Sources */,
+				72B039031906B47900322E8D /* StateKen.cpp in Sources */,
+				72B038E519055B5B00322E8D /* Janken.cpp in Sources */,
+				72B0390E1906BA4500322E8D /* StateConnect.cpp in Sources */,
 				72B038D91905542200322E8D /* main.cpp in Sources */,
+				72B039001906B43500322E8D /* StateJan.cpp in Sources */,
+				72DE2F3D1907330F0027097B /* StateContext.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +275,13 @@
 		72B038DF1905542200322E8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(LEAPSDK_PATH)/include",
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				LEAPSDK_PATH = /Users/mharaki/Works/LeapDeveloperKit/LeapSDK;
+				LIBRARY_SEARCH_PATHS = "$(LEAPSDK_PATH)/lib";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -204,6 +289,13 @@
 		72B038E01905542200322E8D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(LEAPSDK_PATH)/include",
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				LEAPSDK_PATH = /Users/mharaki/Works/LeapDeveloperKit/LeapSDK;
+				LIBRARY_SEARCH_PATHS = "$(LEAPSDK_PATH)/lib";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -227,6 +319,7 @@
 				72B038E01905542200322E8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
