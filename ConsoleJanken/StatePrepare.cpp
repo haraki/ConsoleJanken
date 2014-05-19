@@ -45,17 +45,21 @@ int StatePrepare::eventFrame(StateContext& context, const Leap::Controller& cont
     int ret = 0;
     
     const Leap::Frame frame = controller.frame();
-    const Leap::Hand hand = frame.hands()[0];
     
-    if(!hand.fingers().isEmpty())
+    if(!frame.hands().isEmpty())
     {
-        std::cout << "Are you ready?\n" << std::endl;
+        const Leap::Hand hand = frame.hands()[0];
+    
+        if(!hand.fingers().isEmpty())
+        {
+            std::cout << "Are you ready?\n" << std::endl;
         
-        Leap::Vector position = hand.palmPosition();
+            Leap::Vector position = hand.palmPosition();
         
-        JankenApp::getInstance()->setShakeStartPosition(position);
+            JankenApp::getInstance()->setShakeStartPosition(position);
         
-        ret = context.changeState(StateJan::getInstance());
+            ret = context.changeState(StateJan::getInstance());
+        }
     }
     
     return ret;
